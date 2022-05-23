@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+.cardd {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 3%;
+     
+}
+
+.movie-containner {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 7px 7px;
+    background-color: white;
+    width: 17%;
+    height: 388px;
+    margin: 9px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+}
+.movie-containner:hover  {
+   background-color: aliceblue;
+}
+
+
+.movie-title {
+    color:red;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: 'League Gothic', sans-serif;
+}
+
+
+
+
+.div-movie-button-delete{
+    display: flex;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+    
+}
+.div-movie-button-delete button{
+    border: none;
+ }
+
+
+.movie-button-delete  {
+  background-color: #9b2522;
+  width: 50px;
+  border: none;
+  height: 40px;
+  border-radius: 0 0 5px 0;
+  color: white;
+  font-size: 15px;
+}
+.movie-button-delete:hover {
+    background-color: #b63836;
+    color: black;    
+    }
+
+.description {  
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+.movie-img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+.active {
+    border: 1px solid rebeccapurple!important;
+    background-color: red!important;
+    color: aliceblue!important;
+  }
+  button{
+      background:white ;
+      color: #dc3545;;
+  }
