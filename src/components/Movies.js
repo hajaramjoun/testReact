@@ -2,17 +2,7 @@ import React from "react";
 import "./Movies.css";
 import c from "classnames";
 class Movies extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-
-    }
-  }
-  componentDidMount() {
-    console.log(this.props.dislikeActive)
-    console.log(this.props.likeActive)
-  }
-
+  
   render() {
     return (
       <div className="movie-containner">
