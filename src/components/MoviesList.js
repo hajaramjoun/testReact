@@ -11,13 +11,24 @@ class MoviesList extends React.Component {
       input: 0,
       category: '',
       click: null,
-      categores: ['', 'Comedy', 'Animation', 'Thriller', 'Drame'],
+      categores: [''],
       movies: []
     }
   }
+
   componentDidMount() {
+    console.log("item.category")
+    this.props.listMovies.map((item) => {
+      if (!this.state.category.includes(item.category)) {
+        this.state.categores.push(item.category)
+      }
+    })
+    let unique = [...new Set(this.state.categores)]
+    this.setState({ categores: unique })
+    console.log(unique)
     this.filtrer()
   }
+
 
   handleClick = (e) => {
 
@@ -125,7 +136,7 @@ class MoviesList extends React.Component {
     const movie = this.props.listMovies.filter(movies => movies.category.includes(this.state.category))
     this.setState({ movies: newMovie })
     this.setState({ canSee: i })
-   
+
   }
   handleChange = (e) => {
 
@@ -135,7 +146,7 @@ class MoviesList extends React.Component {
     const movie = this.props.listMovies.filter(movies => movies.category.includes(e.target.value))
     this.setState({ movies: newMovie })
     this.setState({ input: 0 })
-   
+
 
 
   }
