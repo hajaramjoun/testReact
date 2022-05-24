@@ -10,7 +10,6 @@ class MoviesList extends React.Component {
       canSee: 4,
       input: 0,
       category: '',
-      key: '',
       click: null,
       categores: ['', 'Comedy', 'Animation', 'Thriller', 'Drame'],
       movies: []
