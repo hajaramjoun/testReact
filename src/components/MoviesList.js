@@ -125,9 +125,7 @@ class MoviesList extends React.Component {
     const movie = this.props.listMovies.filter(movies => movies.category.includes(this.state.category))
     this.setState({ movies: newMovie })
     this.setState({ canSee: i })
-    this.props.dispatch({
-      type: MovieActionTypes.UpdateMovie, movie
-    })
+   
   }
   handleChange = (e) => {
 
@@ -137,9 +135,7 @@ class MoviesList extends React.Component {
     const movie = this.props.listMovies.filter(movies => movies.category.includes(e.target.value))
     this.setState({ movies: newMovie })
     this.setState({ input: 0 })
-    this.props.dispatch({
-      type: MovieActionTypes.UpdateMovie, movie
-    })
+   
 
 
   }
