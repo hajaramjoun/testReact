@@ -334,8 +334,7 @@ const stateInit = {
 
 export const MovieActionTypes = {
   DeleteMovie: "Movie/DeleteMovie",
-  UpdateMovie: "Movie/ UpdateMovie",
-  UpdateLikeMovie: "Movie/UpdateLikeMovie",
+ 
 };
 
 export default (state = stateInit, action) => {
